@@ -2,6 +2,7 @@ const express = require ("express") //está indo buscar dentro do node_modules
 const nunjucks = require('nunjucks')
 
 const server = express()
+const videos = require("./data")
 
 server.use(express.static('public'))
 server.set("view engine", "njk")
@@ -15,7 +16,7 @@ server.get("/", function(req, res){
 })
 
 server.get("/portfolio", function(req, res){
-  return res.render("portfolio")
+  return res.render("portfolio", {items: videos})
 })
 
 server.listen(5000, function(){ //ele está ounvido uma porta 
