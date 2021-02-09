@@ -1,0 +1,270 @@
+@import  url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --color-pink:#FBDFDB;
+  --color-font: #111111;
+}
+
+body {
+  background-color: white;
+  font-family:'Roboto', sans-serif;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+header {
+  margin-top: 36px;
+  width: 100%;
+  display: flex;
+  /*position: fixed;*/
+  margin-bottom: 30px;
+}
+
+.links  {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 122px;
+}
+
+.links a {
+  margin: 0 60px 0 0;
+  color: var(--color-font);
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.links a:hover {
+  font-size: 17px;
+  transition:  font-size 300ms;
+}
+
+/* === TÍTULOS DAS PÁGINAS === */
+
+.links .active {
+  font-weight: bold;
+}
+
+/* === POSTS === */
+
+.welcome__card {
+  height: 360px;
+  background-color: var(--color-pink);
+  position: relative;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.infor__container {
+  max-width: 316px;
+  margin: 0 60px;
+}
+
+.infor__container h1 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: bold;
+  color: var(--color-font);
+  margin-bottom: 10px;
+}
+
+.infor__container p {
+  opacity: 0.7;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: black;
+}
+
+.image__chef {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+
+.wrapper {
+  margin: 50px 0 0;
+}
+
+.wrapper h1 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: var(--color-font);
+}
+
+/* === CARDS ===*/
+
+.cards {
+  padding-top: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card__image-container img {
+  width: 100%;
+  height: 175px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card__infor-content h1{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-font);
+  margin-bottom: 5px;
+}
+
+.card__autor-content p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+}
+
+/* === Rodapé === */
+
+.baseboard {
+  width: 100%;
+  height: 62px;
+  margin-bottom: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  background-color: #EEEEEE;
+  color: #999999;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* === SOBRE === */
+
+.text-information {
+  margin-top: 50px;
+  width: 100%;
+}
+
+#text__super h1 {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-font);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#text__super h2 {
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-font);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#text__super p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+/* === RECEITAS === */
+
+.modal-overlay {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.60);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+}
+
+.modal {
+  height: 413px;
+  max-width: 660px;
+  margin: auto;
+  background-color: white;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  max-height: 413px;
+  margin: 30px;
+}
+
+.modal-content img {
+  border-radius: 15px;
+  width: 600px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.modal-content h1 {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-font);
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.infor__autor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.infor__autor p {
+  margin: auto 2px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+}
+
+.close-modal {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-modal a {
+  font-size: 16px;
+  color: #999999;
+  cursor: pointer;
+}
+
+
+
