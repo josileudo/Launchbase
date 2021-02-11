@@ -103,6 +103,7 @@ header div a:hover {
 .card {
   background-color: var(--color-lilac);
   cursor: pointer;
+  display: grid;
 }
 
 .card__image-container img{
@@ -118,6 +119,7 @@ header div a:hover {
 .card__contents,
 .card__author-post {
   padding: 15px;
+  align-items: center;
 }
 
 .card__author-post {
