@@ -89,7 +89,7 @@ header {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 .card {
@@ -97,8 +97,13 @@ header {
   display: grid;
 }
 
+.card__image-container {
+  position: relative;
+}
+
 .card__image-container img {
   width: 100%;
+  position: relative;
 }
 
 .card__content,
@@ -165,4 +170,16 @@ iframe {
   height: 90%;
   position: absolute;
   top: 5%;
+}
+
+/* === FEATURED ===*/
+
+.featured {
+  background: #f7d05f;
+  color: #111;
+  position: absolute;
+  right: 5px; 
+  padding: 2px 8px;
+  border-radius: 16px;
+  top: -10px
 }
