@@ -3,7 +3,8 @@ module.exports = [
     id: "GykTLqODQuU",
     title: "Formulário animado com JS e CSS Animation | Mayk Brito", 
     duration: "57 Min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id: "HN1UjzRSdBk",
@@ -15,7 +16,8 @@ module.exports = [
     id: "vqrjFnq3-uo",
     title: "Criando Player de áudio | Mayk Brito", 
     duration: "105 Min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id: "2alg7MQ6_sI",
@@ -33,6 +35,7 @@ module.exports = [
     id: "GSqR2i-Pq6o",
     title: "Desvendando a variável THIS | Mayk Brito", 
     duration: "48 Min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
 ]
