@@ -7,17 +7,15 @@
 {% endblock %}
 
 <div id="wrapper">
-  <img src="https://avatars2.githubusercontent.com/u/48743781?s=400&u=b3328af9a6ad91510c9dc3dc2eebac65a3d5047a&v=4"
-    alt="Josileudo Rodrigues">
-  <h1>Josileudo Rodrigues</h1>
-  <h2>Aluno - Rocketseat</h2>
-  <p>Programador Web Júnior, focado no aprendizado contínuo. Aluno <a href="https://rocketseat.com.br"
-      target="blanck">Rocketseat</a></p>
+  <img src="{{about.avatar_url}}" alt="{{about.name}}">
+  <h1>{{about.name}}</h1>
+  <h2>{{about.role}}</h2>
+  <p>{{about.description}}</p>
 </div>
 <div id="links-footer" class="links">
-  <a href="https://twitter.com/JosileudoRodri1" target="blanck">Twitter</a>
-  <a href="https://github.com/josileudo" target="blanck">Github</a>
-  <a href="https://www.linkedin.com/in/josileudo-rodrigues-a83a3b138/" target="blanck">Linkedin</a>
+  {% for link in about.links %}
+    <a href="{{link.url}}" target="blanck">{{link.name}}</a>
+  {% endfor %}
 </div>
 
 {% endblock %}
