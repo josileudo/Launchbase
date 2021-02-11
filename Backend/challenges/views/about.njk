@@ -5,17 +5,17 @@
     <title> Sobre Rocketseat </title>
   {% endblock %}
   <div id="wrapper">
-    <img src="https://pbs.twimg.com/profile_images/1291682473592659968/sEorc6oh_400x400.jpg" alt="rocketseat">
-    <h1>Rocketseat</h1>
-    <h2>Uma empresa responsável por te colocar no próximo nível</h2>
-    <ul>Principais Tecnologias</ul>
-    <li>React Native</li>
-    <li>Node.js</li>
-    <li>React.js</li>
+    <img src="{{about.img_url}}" alt="imagem da {{about.title}}">
+    <h1>{{about.title}}</h1>
+    <h2>{{about.role}}</h2>
+    <ul>{{about.topic}}</ul>
+    {% for tech in about.techs %}
+      <li>{{tech.name}}</li>
+    {% endfor %}
   </div>
   <div id= "links-footer" class="links">
-    <a href="https://github.com/Rocketseat" target="blank">Github</a>
-    <a href="http://instagram.com/rocketseat_oficial" target="blank">Instagram</a>
-    <a href="http://fb.com/rocketseat" target="blank">Facebook</a>
+    {% for link in about.links %}
+      <a href="{{link.url}}" target="blank">{{link.name}}</a>    
+    {% endfor %}
   </div>
 {% endblock %}
