@@ -95,9 +95,10 @@ header {
 .card {
   background-color: var(--color-lilac);
   display: grid;
+  cursor: pointer;
 }
 
-.card__image-container {
+.featured-wrapper .card__image-container {
   position: relative;
 }
 
