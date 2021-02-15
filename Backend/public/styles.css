@@ -95,6 +95,11 @@ header {
 .card {
   background-color: var(--color-lilac);
   display: grid;
+  cursor: pointer;
+}
+
+.featured-wrapper.card__image-container {
+  position: relative;
 }
 
 .card__image-container {
@@ -103,8 +108,6 @@ header {
 
 .card__image-container img {
   width: 100%;
-  position: relative;
-}
 
 .card__content,
 .card__info {
