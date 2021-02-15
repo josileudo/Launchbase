@@ -33,6 +33,10 @@ server.get("/portfolio", function(req, res){
   return res.render("portfolio", {items: videos})
 })
 
+server.get("/video", function(req,res){
+  return res.send("olá Jesus")
+})
+
 server.listen(5000, function(){ //ele está ounvido uma porta 
   console.log("server is running")
 })
