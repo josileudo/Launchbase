@@ -98,13 +98,13 @@ header {
   cursor: pointer;
 }
 
-.featured-wrapper .card__image-container {
+.featured-wrapper.card__image-container {
   position: relative;
 }
 
 .card__image-container img {
   width: 100%;
-  position: relative;
+  
 }
 
 .card__content,
