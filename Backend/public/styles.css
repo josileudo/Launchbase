@@ -102,10 +102,12 @@ header {
   position: relative;
 }
 
+.card__image-container {
+  position: relative;
+}
+
 .card__image-container img {
   width: 100%;
-  
-}
 
 .card__content,
 .card__info {
