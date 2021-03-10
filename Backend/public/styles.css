@@ -108,6 +108,7 @@ header {
 
 .card__image-container img {
   width: 100%;
+}
 
 .card__content,
 .card__info {
