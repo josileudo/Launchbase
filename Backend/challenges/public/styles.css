@@ -5,7 +5,7 @@
   padding: 0;
 }
 :root {
-  --color-lilac:#9466ff;
+  --color-lilac:#3a3c4b;
   --color-black:#282a36;
 }
 
@@ -104,10 +104,19 @@ header div a:hover {
   background-color: var(--color-lilac);
   cursor: pointer;
   display: grid;
+  border-radius: 5px;
+  height: 400px;
+}
+
+.card:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.877);
+  box-shadow: 2px 1px 10px rgba(255, 255, 255, 0.2);
+  transition: all 300ms;
 }
 
 .card__image-container img{
   width: 100%;
+  border-radius: 5px;
 }
 
 .card__contents {

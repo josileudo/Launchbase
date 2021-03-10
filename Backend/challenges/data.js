@@ -1,23 +1,23 @@
 module.exports = [
   {
-    id: "nextjs-novidades-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance/",
-    img_url: "https://blog.rocketseat.com.br/content/images/2020/11/capa_visao-geral-sobre-next-js-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance.jpg",
-    title: "Next.JS - Novidades na versão 10 e atualização do blog para melhorar a performance",
-    name: "Thiago Marinho",
-    time: "4 Min Leitura" 
+    id: "padroes-de-projeto",
+    img_url: "https://thinkific.s3.amazonaws.com/courses/course_card_image_001/150/0891613353144.medium.png",
+    title: "Padrões de Java na prática!",
+    lesson: "94 aulas",
+    price: "R$52,00" 
   },
   {
-    id: "mapas-com-react-usando-leaflet/",
-    img_url: "https://blog.rocketseat.com.br/content/images/2020/11/blog-thumb-utilizando-mapas-no-react-com-leaflet-1.jpg",
-    title: "Mapas com React usando Leaflet",
-    name: "Thiago Marinho",
-    time: "11 min leitura" 
+    id: "aprenda-programacao-do-zero",
+    img_url: "https://thinkific-import.s3.amazonaws.com/220759/P6WnvkXMRPCMo7XDGnhI_algoritmo.jpg",
+    title: "Aprenda Programação do absoluto zero! Seu primeiro curso de programação",
+    lesson: "157 Aulas",
+    price: "R$52,00" 
   },
   {
-    id: "como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/",
-    img_url: "https://blog.rocketseat.com.br/content/images/2020/11/thumb-como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal.jpg",
-    title: "Como renomear vários arquivos de uma vez usando o terminal",
-    name: "Thiago Marinho",
-    time: "2 min leitura" 
+    id: "web-moderno",
+    img_url: "https://thinkific.s3.amazonaws.com/bundles/bundle_card_image_000/043/058/1605782216.original.png",
+    title: "Web moderno com JavaScript COMPLETO + Projetos",
+    lesson: "614 Aulas",
+    price: "R$72,00" 
   }
 ]
