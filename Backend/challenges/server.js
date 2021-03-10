@@ -51,7 +51,7 @@ server.get(`/courses/:id`, function(req, res){
   if (!course){
     res.status(404).render("not-found")
   }
-  return res.render ("courses", {items: courses})
+  return res.render ("course", {items: courses})
 })
 
 server.use(function(req, res){
