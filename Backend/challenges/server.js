@@ -2,7 +2,7 @@ const express = require("express")
 const nunjucks = require("nunjucks")
 
 const server = express()
-const prep = require("./data")
+const courses = require("./data")
 
 server.use(express.static("public"))
 
@@ -40,7 +40,18 @@ server.get("/about", function(req, res){
 })
 
 server.get("/courses", function(req, res) {
-  return res.render("courses", {items: prep})
+  return res.render("courses", {items: courses})
+})
+
+server.get(`/courses/:id`, function(req, res){
+  const id = req.params.id
+  const course = courses.find(function course(courses){
+    return courses.id == id 
+  })
+  if (!course){
+    res.status(404).render("not-found")
+  }
+  return res.render ("courses", {items: courses})
 })
 
 server.use(function(req, res){
