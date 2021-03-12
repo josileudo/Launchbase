@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-  <link rel="stylesheet" href="styles.css">
-  <title>Receitas</title>
-</head>
-<body>
+{% extends "layout.njk" %}
 
-  <header>
-    <div class="links">
-      <a href="/"><img src="assets/logo.png" alt="logo_foodfy"></a>
-      <a href="/super">Sobre</a>
-      <a href="/revenue" class="active">Receitas</a>
-    </div>
-  </header>
- 
+{% block content %}
   <section class="cards">
 
     <div class="card" id="burger.png">
@@ -19,7 +8,7 @@
         <img src="assets/burger.png" alt="imagem">
       </div>
 
-      <div class="card__infor-content" >
+      <div class="card__infor-content">
         <h1 id="title">Triplo bacon burger</h1>
       </div>
 
@@ -88,13 +77,12 @@
       </div>
     </div>
 
-    
     <div class="card" id="burger.png">
       <div class="card__image-container">
         <img src="assets/burger.png" alt="imagem">
       </div>
 
-      <div class="card__infor-content" >
+      <div class="card__infor-content">
         <h1 id="title">Triplo bacon burger</h1>
       </div>
 
@@ -164,9 +152,7 @@
     </div>
 
   </section>
- 
-  <footer class="baseboard">Todos direitos reservados, receitas foodfy</footer>
-  
+
   <div class="modal-overlay">
     <div class="modal">
       <div class="modal-content">
@@ -183,5 +169,5 @@
   </div>
 
   <script src="scripts.js"></script>
-</body>
-</html>
+
+{% endblock %}
