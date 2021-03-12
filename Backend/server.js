@@ -1,8 +1,8 @@
 const express = require ("express") //está indo buscar dentro do node_modules
 const nunjucks = require('nunjucks')
+const videos = require("./data")
 
 const server = express()
-const videos = require("./data")
 
 server.use(express.static('public'))
 server.set("view engine", "njk")
