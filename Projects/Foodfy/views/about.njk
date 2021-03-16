@@ -15,78 +15,20 @@
     <h1>Mais acessadas</h1>
   </div>
   <section class="cards">
-
-    <div class="card">
-      <div class="card__image-container">
-        <img src="assets/burger.png" alt="imagem">
+    {% for item in items %}
+      <div class="card">
+        <div class="card__image-container">
+          <img src="{{item.image}}" alt="receita de {{item.title}}">
+        </div>
+        <div class="card__infor-content">
+          <h1>{{item.title}}</h1>
+        </div>
+        <div class="card__autor-content">
+          <p>{{item.author}}</p>
+        </div>
       </div>
-      <div class="card__infor-content">
-        <h1>Triplo bacon burger</h1>
-      </div>
-      <div class="card__autor-content">
-        <p>por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card__image-container">
-        <img src="assets/pizza.png" alt="imagem">
-      </div>
-      <div class="card__infor-content">
-        <h1>Pizza 4 estações</h1>
-      </div>
-      <div class="card__autor-content">
-        <p>Fabiano Melo</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card__image-container">
-        <img src="assets/espaguete.png" alt="imagem">
-      </div>
-      <div class="card__infor-content">
-        <h1>Espaguete ao alho</h1>
-      </div>
-      <div class="card__autor-content">
-        <p>Júlia Kinoto</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card__image-container">
-        <img src="assets/lasanha.png" alt="imagem">
-      </div>
-      <div class="card__infor-content">
-        <h1>Lasanha mac n´cheese</h1>
-      </div>
-      <div class="card__autor-content">
-        <p>por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card__image-container">
-        <img src="assets/doce.png" alt="imagem">
-      </div>
-      <div class="card__infor-content">
-        <h1>Docinhos pão-do-céu</h1>
-      </div>
-      <div class="card__autor-content">
-        <p>por Ricargo Golvea</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card__image-container">
-        <img src="assets/asinhas.png" alt="imagem">
-      </div>
-      <div class="card__infor-content">
-        <h1>Asinhas de frango ao barbecue</h1>
-      </div>
-      <div class="card__autor-content">
-        <p>por Vania Steroski</p>
-      </div>
-    </div>
+    {% endfor %}
+    
   </section>
 
 {% endblock %}
