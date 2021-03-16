@@ -30,11 +30,13 @@ server.get("/ingredients", function (req, res){
   return res.render("ingredients")
 })
 
-server.get("/recipes: index", function (req, res){
+server.get("/recipes/:index", function (req, res){
   const recipes = [...mode]
   const recipeIndex = req.params.index
 
-  console.log(recipes[recipesIndex])
+  console.log(recipes[recipeIndex])
+
+  return res.render("recipe", {item: recipes[recipeIndex]})
 })
 
 server.listen(5000, function(){
