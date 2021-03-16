@@ -124,6 +124,7 @@ header {
 .card__image-container img {
   width: 100%;
   height: 175px;
+  object-fit: cover;
   border-radius: 15px;
   margin-bottom: 20px;
 }
