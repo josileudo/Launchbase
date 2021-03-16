@@ -1,9 +1,13 @@
 {% extends "layout.njk" %}
-
 {% block content %}
+ 
+ {% block head %}
+    <title>{{item.title}}</title>
+  {% endblock %}
+ 
   <section class="cards">
-   {% for item in items %}
-    <div class="card" id="{{loop.index}}">
+   
+    <div class="card" id="{{item.id}}">
       <div class="card__image-container">
         <img src="{{item.image}}" alt="imagem {{item.title}}">
       </div>
@@ -14,7 +18,7 @@
         <p>{{item.author}}</p>
       </div>
     </div>
-    {% endfor %}
+   
   </section>
 
   <script src="scripts.js"></script>
