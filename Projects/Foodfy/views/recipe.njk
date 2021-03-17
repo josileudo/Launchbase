@@ -5,17 +5,15 @@
     <title>{{item.title}}</title>
   {% endblock %}
  
-  <section class="cards">
+  <section class="recipe-container" >
    
-    <div class="card" id="{{item.id}}">
-      <div class="card__image-container">
+    <div class="recipe" id="{{item.id}}">
+      <div class="card__image-recipe">
         <img src="{{item.image}}" alt="imagem {{item.title}}">
       </div>
       <div class="card__infor-content">
         <h1>{{item.title}}</h1>
-      </div>
-      <div class="card__autor-content">
-        <p>{{item.author}}</p>
+        <p>Por {{item.author}}</p>
       </div>
     </div>
    

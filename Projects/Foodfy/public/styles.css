@@ -190,82 +190,25 @@ header {
   margin-bottom: 20px;
 }
 
-/* === RECEITAS === */
-
-.modal-overlay {
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.60);
-  opacity: 0;
-  visibility: hidden;
-  display: flex;
+/* === PAGE RECIPE === */
+.recipe-container {
+  align-items: center;
 }
-
-.modal {
-  height: 413px;
-  max-width: 660px;
-  margin: auto;
-  background-color: white;
-  border-radius: 16px;
+.recipe{
+  width: 100%;
+  height: auto;
   text-align: center;
-  position: relative;
 }
 
-.modal-overlay.active{
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal-content {
-  max-height: 413px;
-  margin: 30px;
-}
-
-.modal-content img {
-  border-radius: 15px;
-  width: 600px;
-  height: 200px;
+.card__image-recipe img {
   object-fit: cover;
-  margin-bottom: 20px;
+  border-radius: 15px;
 }
 
-.modal-content h1 {
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--color-font);
-  font-weight: normal;
-  margin-bottom: 5px;
+.card__image-recipe h1 {
+  width: auto;
 }
 
-.infor__autor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
-
-.infor__autor p {
-  margin: auto 2px;
-  font-size: 18px;
-  line-height: 21px;
-  color: #777777;
-}
-
-.close-modal {
-  width: 100%;
-  position: absolute;
-  bottom: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.close-modal a {
-  font-size: 16px;
-  color: #999999;
-  cursor: pointer;
-}
 
 
 
