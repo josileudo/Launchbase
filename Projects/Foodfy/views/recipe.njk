@@ -23,8 +23,8 @@
         <button> Mostrar/Esconder </button>
       </div>
       <div class = "list-content"> 
-        {% for item in items %}
-          <li>{{item.ingredients}}</li>     
+        {% for ingredient in items.ingredients %}
+          <li>{{ingredient}}</li>     
         {% endfor %}
       </div>
    </div>
