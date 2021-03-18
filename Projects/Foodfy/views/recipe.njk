@@ -47,7 +47,7 @@
         <button> Mostrar/Esconder </button>
       </div>
       <div class = "list-content"> 
-        <p>{{items.information}}</p>  
+        <p>{{items.information | striptags(true) | escape | nl2br}}</p>  
       </div>
    </div>
 
