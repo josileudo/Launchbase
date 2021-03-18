@@ -2,23 +2,34 @@
 {% block content %}
  
  {% block head %}
-    <title>{{item.title}}</title>
+    <title>{{items.title}}</title>
   {% endblock %}
  
   <section class="recipe-container" >
    
-    <div class="recipe" id="{{item.id}}">
+    <div class="image_recipe-container" id="{{item.id}}">
       <div class="image-recipe">
-        <img src="{{item.image}}" alt="imagem {{item.title}}">
+        <img src="{{items.image}}" alt="imagem {{items.title}}">
       </div>
       <div class="infor-recipe">
-        <h1>{{item.title}}</h1>
-        <p>Por {{item.author}}</p>
+        <h1>{{items.title}}</h1>
+        <p>Por {{items.author}}</p>
       </div>
     </div>
    
+   <div class = "ingredients-container"> 
+      <div class= "state-ingredients"> 
+        <h1> Ingredientes </h1>
+        <button> Mostrar/Esconder </button>
+      </div>
+      <div class = "list-content"> 
+        {% for item in items %}
+          <li>{{item.ingredients}}</li>     
+        {% endfor %}
+      </div>
+   </div>
   </section>
-
+  
   <script src="scripts.js"></script>
 
 {% endblock %}

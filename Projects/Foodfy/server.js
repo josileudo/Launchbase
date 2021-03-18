@@ -36,7 +36,7 @@ server.get("/recipes/:index", function (req, res){
 
   console.log(recipes[recipeIndex])
 
-  return res.render("recipe", {item: recipes[recipeIndex]})
+  return res.render("recipe", {items: recipes[recipeIndex - 1]})
 })
 
 server.listen(5000, function(){
