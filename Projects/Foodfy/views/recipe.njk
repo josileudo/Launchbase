@@ -17,8 +17,8 @@
       </div>
     </div>
    
-   <div class = "ingredients-container"> 
-      <div class= "state-ingredients"> 
+   <div class = "mode-container"> 
+      <div class= "state-container"> 
         <h1> Ingredientes </h1>
         <button> Mostrar/Esconder </button>
       </div>
@@ -28,6 +28,29 @@
         {% endfor %}
       </div>
    </div>
+
+   <div class = "mode-container"> 
+      <div class= "state-container"> 
+        <h1> Modo de preparo </h1>
+        <button> Mostrar/Esconder </button>
+      </div>
+      <div class = "list-content"> 
+        {% for preparation in items.preparation %}
+          <li>{{preparation}}</li>     
+        {% endfor %}
+      </div>
+   </div>
+
+    <div class = "mode-container"> 
+      <div class= "state-container"> 
+        <h1> Informações adicionais </h1>
+        <button> Mostrar/Esconder </button>
+      </div>
+      <div class = "list-content"> 
+        <p>{{items.information}}</p>  
+      </div>
+   </div>
+
   </section>
   
   <script src="scripts.js"></script>
