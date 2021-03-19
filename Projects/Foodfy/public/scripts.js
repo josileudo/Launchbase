@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(".card")
-const modalOverlay = document.querySelector(".modal-overlay")
+const list = document.querySelector(".list-content")
 
 for (let card of cards){
   card.addEventListener("click", function(){
@@ -7,3 +7,12 @@ for (let card of cards){
     window.location.href = `/recipes/${recipe}`
   })
 }
+
+document.querySelector(".show-button").addEventListener("click", function(){
+  if (list.classList.contains("active")){
+    list.classList.remove("active")
+
+  } else {
+    list.classList.add("active")
+  }
+})

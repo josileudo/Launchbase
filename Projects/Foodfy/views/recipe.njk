@@ -7,7 +7,7 @@
  
   <section class="recipe-container" >
    
-    <div class="image_recipe-container" id="{{item.id}}">
+    <div class="image_recipe-container " id="{{item.id}}">
       <div class="image-recipe">
         <img src="{{items.image}}" alt="imagem {{items.title}}">
       </div>
@@ -20,7 +20,7 @@
    <div class = "mode-container"> 
       <div class= "state-container"> 
         <h1> Ingredientes </h1>
-        <button> Mostrar/Esconder </button>
+        <button class= "show-button"> Mostrar </button>
       </div>
       <div class = "list-content"> 
         {% for ingredient in items.ingredients %}
@@ -53,6 +53,6 @@
 
   </section>
   
-  <script src="scripts.js"></script>
+  <script src="/scripts.js"></script>
 
 {% endblock %}
