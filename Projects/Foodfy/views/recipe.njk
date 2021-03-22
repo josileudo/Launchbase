@@ -20,7 +20,7 @@
    <div class = "mode-container"> 
       <div class= "state-container"> 
         <h1> Ingredientes </h1>
-        <button class= "show-button"> Mostrar </button>
+        <h4 class= "show-button"> MOSTRAR </h4>
       </div>
       <div class = "list-content"> 
         {% for ingredient in items.ingredients %}
@@ -32,7 +32,7 @@
    <div class = "mode-container"> 
       <div class= "state-container"> 
         <h1> Modo de preparo </h1>
-        <button> Mostrar/Esconder </button>
+        <h4 class= "show-button"> MOSTRAR </h4>
       </div>
       <div class = "list-content"> 
         {% for preparation in items.preparation %}
@@ -44,7 +44,7 @@
     <div class = "mode-container"> 
       <div class= "state-container"> 
         <h1> Informações adicionais </h1>
-        <button> Mostrar/Esconder </button>
+        <h4 class= "show-button"> MOSTRAR </h4>
       </div>
       <div class = "list-content"> 
         <p>{{items.information | striptags(true) | escape | nl2br}}</p>  
