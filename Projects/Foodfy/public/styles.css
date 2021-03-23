@@ -5,6 +5,10 @@
   border: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 :root {
   --color-pink:#FBDFDB;
   --color-font: #111111;
@@ -50,7 +54,7 @@ header {
 
 /* === TÍTULOS DAS PÁGINAS === */
 
-.links .active {
+.topic.active {
   font-weight: bold;
 }
 
@@ -145,19 +149,19 @@ header {
 
 /* === Rodapé === */
 
-.baseboard {
-  width: 100%;
-  height: 62px;
-  margin-bottom: 0;
-  left: 0;
+footer {
+  background: #eeeeee;
   position: absolute;
-  display: flex;
-  background-color: #EEEEEE;
-  color: #999999;
-  justify-content: center;
-  align-items: center;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 23.5px 0;
+  margin-top: 50px;
+}
+
+footer p {
   font-size: 14px;
-  line-height: 16px;
+  color:#3333;
 }
 
 /* === SOBRE === */
@@ -236,8 +240,12 @@ header {
   margin-bottom: 20px;
 }
 
-.state-container h1 {
+.state-container ul {
   margin-right: 8px;
+  font-weight: Bold;
+  font-size: 24px;
+  color: #111111;
+  line-height: 28px;
 }
 
 .state-container h4 {
@@ -255,7 +263,6 @@ header {
 .list-content {
   width: 100%;
   opacity: 0;
-  visibility: hidden;
   display: none;
 }
 

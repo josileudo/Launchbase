@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll(".card")
 const buttons = document.querySelectorAll(".show-button")
 const list = document.querySelectorAll(".list-content")
-
+const topic = document.querySelector(".topic")
 
 for (let card of cards){
   card.addEventListener("click", function(){
@@ -10,11 +10,13 @@ for (let card of cards){
   })
 }
 
+document.querySelector(".topic").addEventListener("click", function(){
+  
+})
+
 for (const button in buttons){
   buttons[button].addEventListener("click", function(){
     
-    console.log(buttons[button].innerHTML)
-
     if(list[button].classList.contains("active")){
       list[button].classList.remove ("active")
       
